@@ -1,0 +1,63 @@
+body{
+    background-color: #E8E9EB;
+    color: #313638;
+}
+#wrapper{
+    /* background-color: #E0DFD5; */
+    color: #d4d4d4;
+    /* padding: 1%; */
+    margin: 1% 5%;
+}
+h1, h2{
+    color: #a8e3e6;
+    font-family: 'Arvo';
+    /* font-weight: 500; */
+}
+
+span.first{
+    font-weight: 800;
+    color: #eff46f;
+}
+
+
+#moodList img{
+    height: 200px;
+}
+
+#moodList .imgDiv{
+    /* min-height: 295px; */
+    /* background-color: #E8E9EB; */
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#moodList .imgDiv span{
+    width: inherit;
+    text-align: center;
+}
+
+div#wrapper>div{
+    background-color: #595647;
+    /* #595647 */
+    padding: 1% 1% 1% 2%;
+    box-shadow:#a2a2a3 5px 5px 3px;
+}
+
+div#header span strong{
+    color: #eff46f;
+}
+
+#movies a{
+    text-decoration: none;
+    color: rgb(214, 68, 0)
+}
+
+#movies a:visited{
+    color: rgb(55, 151, 106)
+}
+
+#movies a:hover{
+    color: rgb(83, 221, 157)
+}
