@@ -50,3 +50,7 @@ div#userComments blockquote{
     background-color: #FFFFA8;
     font-style: italic;
 }
+
+#copyright{
+    text-align: right;
+}
