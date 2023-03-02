@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Check your grades.</title>
+    <link rel="stylesheet" href="resources/grades/grades.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrapper">
+		<h1>Check grades</h1>
+        <form action="http://mumstudents.org/params.php" method="get">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" size="16"><br><br>
+
+		  <label for="id">ID:</label>
+          <input type="text" id="id" name="id" size="16" maxlength="6"><br><br>
+
+		  <label for="assignmentList">Assignments:</label>
+          <select name="assignmentList" id="assignmentList">
+            <option value="w1d1">Week 1 Day 1</option>
+            <option value="w1d2">Week 1 Day 2</option>
+            <option value="w1d3">Week 1 Day 3</option>          
+            <option value="w1d4">Week 1 Day 4</option>          
+            <option value="w1d5">Week 1 Day 5</option>          
+            <option value="w1d6">Week 1 Day 6</option>          
+            <option value="w2d1">Week 2 Day 1</option>          
+            <option value="w2d2">Week 2 Day 2</option>          
+            <option value="w2d3">Week 2 Day 3</option>          
+            <option value="w2d4">Week 2 Day 4</option>          
+            <option value="w2d4">Week 2 Day 5</option>          
+            <option value="w2d6">Week 2 Day 6</option>          
+          </select><br><br>
+
+
+          <label for="gender">ID:</label>
+          <input type="radio" id="entry_2020" name="entry" value="2020">2020
+          <input type="radio" id="entry_2021" name="entry" value="2021">2021
+          <input type="radio" id="entry_2022" name="entry" value="2022">2022
+          <input type="radio" id="entry_2023" name="entry" value="2023">2023
+		  <br><br>
+
+		  <input type="checkbox" id = "declaration" name = "declaration">
+		  <div id = "declarationText">I confirm that I am checking the grades just for my work and nobody else's. I agree
+			  to be punished according to university policy if found otherwise.
+		  </div>
+		  <br><br>
+
+          <input id = "btn" type="submit" value="Check Grades">
+        </form>
+      </div>
+      <a href="http://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!" />
+      </a>
+    </div>
+  </body>
+</html>
