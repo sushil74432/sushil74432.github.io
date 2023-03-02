@@ -55,6 +55,10 @@ input#btn{
     padding: 5px 10px;
 }
 
+#imgContainer{
+    margin-bottom: 30px;
+}
+
 #imgContainer p{
     padding: 0px;
     margin: 0px;
