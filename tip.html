@@ -25,24 +25,25 @@ function calcTip() {
 			<img id="logo" src="https://mumstudents.org/cs472/2023-03-BL/labs/tip_calculator/calc.jpg" alt="++--**//" />
 			  Tip Calculator
 		</h1>
+        <form action="">
+            <div>
+                <label><input id="subtotal" type="text" name = "subtotal" required> $ Subtotal</label>
+            </div>
 
-		<div>
-			<label><input id="subtotal" type="text" /> $ Subtotal</label>
-		</div>
+            <div>
+                <label><input id="tip" type="text" name = "tip" required> % Tip</label>
+            </div>
 
-		<div>
-			<label><input id="tip" type="text" /> % Tip</label>
-		</div>
+            <div>
+                <button id="btn"  onclick="calcTip();">Calculate Tip</button>
+            </div>
 
-		<div>
-			<button id="btn"  onclick="calcTip();">Calculate Tip</button>
-		</div>
+            <hr />
 
-		<hr />
-
-		<div>
-			<h2>Your total:</h2>
-			<p id="total">$0.00</p>
-		</div>
+            <div>
+                <h2>Your total:</h2>
+                <p id="total">$0.00</p>
+            </div>
+        </form>
 	</body>
 </html>
