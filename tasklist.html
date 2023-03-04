@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task List</title>
+    <link rel="stylesheet" href="resources/tasklist/tasklist.css">
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Task List</h1>
+        <div id="left">
+            Task <br>
+            <input type="text" id="task-input">
+            <button id="addTask" onclick="addTask()">Add Task</button>
+            <button id="clearTask" onclick="clearTask()">Clear Tasks</button>
+        </div>
+        <div id="right">
+            <textarea name="tasks" id="tasks" cols="80" rows="10"></textarea>    
+        </div>
+    </div>
+    <script src="resources/tasklist/tasklist.js"></script>
+</body>
+</html>
