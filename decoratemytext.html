@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="resources/decoratemytext/decoratemytext.css" type="text/css" rel="stylesheet" />
+		<script src="resources/decoratemytext/decoratemytext.js"></script>		
+	</head>
+
+	<body>
+        <div id="wrapper">
+            <h1>Text Decorator</h1>
+            
+            <div>
+                <img src="https://mumstudents.org/cs472/2023-03-BL/labs/DecorateMyText/6/decorated.gif" alt="very decorated!" />
+            </div>
+            <div id="textbox">
+                <p>Text</p>
+                <textarea id = "text" rows="3" cols="30"></textarea>
+            </div>
+            <div id="controls">
+                <p>Decoration</p>
+                <input type="button" value="Bigger Decorations!" onclick="increaseSize()">
+                <input type="button" value="Malovich" onclick="malovich()">
+                <input type="button" value="Igpay Atinlay" onclick="pig()">
+                <input type="checkbox" id = "bling" onchange="bling()"> Bling
+            </div>
+            <!-- Your UI controls go here -->
+        </div>		
+	</body>
+</html>
