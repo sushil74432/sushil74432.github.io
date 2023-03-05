@@ -1,6 +1,3 @@
-const taskInput = document.getElementById('task-input');
-const addTaskBtn = document.getElementById('addTask');
-const clearTasksBtn = document.getElementById('clearTask');
 const taskList = document.getElementById('tasks');
 
 // Load tasks from localStorage if they exist
