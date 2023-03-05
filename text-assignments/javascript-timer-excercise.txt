@@ -1,0 +1,39 @@
+1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+-> In the above statements, the first one will call the booyah function after 2 seconds of delay. 
+   The second one will run the function and pass the return value to setTimeout function.
+
+2. What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+-> Output will be same. on first alert, we have defined the function and assigned it to the variable x. 
+	On second alert, we have just the function defined in a variable but we're passing the values seperately 
+	and is treated the same way as first one.
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+->	booyah(){
+		alert("BOOYAH");
+	}
+
+	booyah(){
+		return(alert("BOOYAH"));
+	}
+
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+-> Unobtrusive JavaScript is an approach to writing JavaScript code that separates 
+	it from the HTML markup and doesn't interfere with the user experience or accessibility of a web page.
+The Idea behind using an unobtrusive js concept or the practical application of it is 
+if to improve the user experience while keeping it accessible to all the users regardless
+of if they have js enabled or not. Seperating js from the code will also help the 
+code to be cleaner and more maintainable. This will also improve the performance of the website.
