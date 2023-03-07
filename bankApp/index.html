@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/bank.css">
+    <title>Account Info</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Accounts</h1>
+        <span class = "formRow">
+            <label for="accName">Account Name</label>
+            <input type="text" name = "accName" id = "accName" required>
+        </span>
+        <br>       
+        <span class = "formRow">
+            <label for="deposit">Deposit</label>
+            <input type="number" name = "deposit" id = "deposit" required>
+        </span>
+        <br>
+        <span class="formRow buttonGrp">
+            <button id = "createAcc" onclick="newAccount()"> Create New Account</button>
+            <button id = "deposit" onclick="deposit()"> Deposit</button>
+            <button id = "withdraw" onclick="withdraw()"> Withdraw</button>
+
+        </span>
+        <br>
+        <hr>
+        <span class="formRow">
+            <label for="accDetails">Accounts List</label>
+            <textarea name="accDetails" id="accDetails" cols="70" rows="10" readonly></textarea>
+        </span>     
+    </div>
+    <div id="model-deposit" class = "modal">
+        <div class = "cross" onclick="showWrapper()">X</div>
+        <h1>Deposit</h1>
+        <div id="accList-deposit">
+            <span class="formRow">
+                <label for="accounts">Select Account</label>
+                <select name="accounts" id="accounts-deposit" onchange="toggleDepositButton()">
+                    <option value=""></option>
+                </select>
+            </span>
+        </div>
+        <span class="formRow">
+            <label for="withdrawAmt">Deposit Amount</label>
+            <input type="text" name="depositAmt" id="depositAmt">
+        </span>
+        <button id = "newDeposit" onclick="depositOperation()"> Deposit Amount</button>
+
+    </div>
+
+
+
+
+
+    <div id="model-withdraw" class = "modal">
+        <div class = "cross" onclick="showWrapper()">X</div>
+        <h1>Withdraw</h1>
+        <div id="accList-withdraw">
+            <span class="formRow">
+                <label for="accounts">Select Account</label>
+                <select name="accounts" id="accounts-withdraw" onchange="toggleWithdrawButton()">
+                    <option value=""></option>
+                </select>
+            </span>
+        </div>
+        <span class="formRow">
+            <label for="withdrawAmt">Withdraw Amount</label>
+            <input type="text" name="withdrawAmt" id="withdrawAmt">
+        </span>
+        <button id = "newWithdraw" onclick="withdrawOperation()"> Withdraw Amount</button>
+    </div>
+    <footer>
+        <script src = "resources/bank.js"></script>
+    </footer>
+</body>
+</html>

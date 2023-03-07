@@ -1,0 +1,69 @@
+#wrapper, .modal{
+    background-color: beige;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 30%;
+    padding: 10px;
+}
+
+form{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formRow{
+    font-weight: bold;
+    width: min-content;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+#accList .formRow{
+    width: max-content;
+}
+
+#createAcc{
+    width: max-content;
+}
+
+#deposit, #withdraw{
+    float: right;
+    margin: 0px 3px 0px 3px;
+}
+
+.buttonGrp{
+    display: inline;
+}
+
+#accounts-deposit, #accounts-withdraw {
+    min-width: 150px;
+}
+
+#model-deposit, #model-withdraw{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.cross{
+    background-color: black;
+    color: white;
+    position: relative;
+    float: right;
+    padding: 3px;
+    border: white 1px solid;
+}
+
+.cross:hover{
+    color: rgb(170, 22, 22);
+    cursor: pointer;
+    box-shadow: gray 2px 2px 1px;
+}
