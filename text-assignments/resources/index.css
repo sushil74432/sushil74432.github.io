@@ -1,0 +1,26 @@
+#wrapper{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightslategray;
+    color: azure;
+    padding: 10px 10px 10px 20px;
+}
+
+p:before{
+    content:"Q. ";
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+#question{
+    font-size: 15px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+#answer{
+    font-style: italic;
+    font-size: 15px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}

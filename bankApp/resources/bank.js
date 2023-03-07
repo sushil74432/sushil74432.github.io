@@ -5,7 +5,6 @@ class account{
     createAccount(name, amt){
         this.#accName = name;
         this.#amount = amt;
-        console.log("Account Created");
     }
 
     getAccName(){
@@ -124,7 +123,6 @@ function withdraw(){
 }
 
 function depositOperation(){
-    console.log("Selected value :: "+document.getElementById("accounts-deposit").value);
     const index = document.getElementById("accounts-deposit").value
     const accObj = account.accountInfoList[index];
     const depositAmt = document.getElementById("depositAmt").value;
@@ -137,7 +135,6 @@ function depositOperation(){
 }
 
 function withdrawOperation(){
-    console.log("Selected value :: "+document.getElementById("accounts-withdraw").value);
     const index = document.getElementById("accounts-withdraw").value
     const accObj = account.accountInfoList[index];
     const withdrawAmt = document.getElementById("withdrawAmt").value;
@@ -158,9 +155,7 @@ function getFromStorage(){
 }
 
 function saveToStorage(acc){
-    console.log(getFromStorage());
     let data = JSON.parse(getFromStorage());
-    console.log(data);
     // data.push("{accName : "+acc.getAccName()+", amt: "+acc.getAmt()+"}");
     data.push("{\"accName\" : \""+acc.getAccName()+"\", \"amt\": "+acc.getAmt()+"}");
     localStorage.setItem("accounts", JSON.stringify(data));
@@ -168,7 +163,6 @@ function saveToStorage(acc){
 
 function updateStorage(index, newAmt){
     let data = JSON.parse(getFromStorage());
-    // console.log(data[index]);
     let row = JSON.parse(data[index]);
     // data[index]["amt"] = newAmt;
     row["amt"] = newAmt;
@@ -180,7 +174,6 @@ function loadDataFromStorage(){
     let data = JSON.parse(getFromStorage());
     data.forEach(e => {
         e = JSON.parse(e);
-        console.log(e.accName, e.amt);
         var acc = new account();
         acc.createAccount(e.accName, e.amt);
         account.accountInfoList.push(acc);
