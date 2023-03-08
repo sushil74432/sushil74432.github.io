@@ -7,16 +7,15 @@
     padding: 10px 10px 10px 20px;
 }
 
-p:before{
+.question p:before{
     content:"Q. ";
     margin-left: 10px;
     margin-right: 3px;
 }
 
-#question{
-    font-size: 15px;
+.question{
+    font-size: 22px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
 }
 
 #answer{

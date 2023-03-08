@@ -1,0 +1,71 @@
+jQuery Quiz II
+
+-------------------------------------------------------------------------------------------------
+
+
+1. Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+they are. Explain why they can have different parameters and be equivalent, if they are equivalent.
+
+//code fragment 1
+$("li").each(function(idx, e) {
+ $(e).css(“color”, “yellow”); });
+//code fragment 2
+$("li").each(function() {
+ $(this).css(“color”, “yellow”); });
+//code fragment 3
+$("li").each(function(idx) {
+ $(this).css(“color”, “yellow”); });
+
+ -> All of the provided code fragments are same in functionality.
+    The syntax for .each() function is .each(function(index, element))
+    * In the first fragment, the function takes both the parameter and used the passed element(e) 
+        as the reference to select the intended element. The idx parameter, although passed, isn't being used.
+    *In the second answer, no parameter is passed to the function, but inside it, "this" is being used as
+        the reference to the selected element. Hence the similar functionality is achieved as code block 1.
+    *In the third answer, although idx is passed as the index of selected element, no element parameter is passed
+        so the function is using the "this" as reference to the currently selected element.
+    
+    Because of these reasons, all the 3 code fragments are equivalent even though the parameters are 
+    different
+
+-------------------------------------------------------------------------------------------------
+
+
+ 2. Write a jQuery expression to find all divs on a page that include an unordered list in them, and make
+their text color be blue.
+ <div>no ul here </div>
+ <div>
+ This does contain a ul.
+ <ul>
+ <li>the first item</li>
+ <li>the second item</li>
+ </ul>
+ </div>
+ <script>
+<!—INSERT YOUR JQUERY CODE HERE - - >
+ </script>
+ </body>
+
+    -> $("div").has("li").css("color", "blue")
+
+
+-------------------------------------------------------------------------------------------------
+
+ 3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body
+element.
+<div><h1>JQuery Core</h1></div>
+HTML:
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>JS Bin</title>
+ </head>
+ <body>
+
+ </body>
+ </html>
+
+    -> $("body").append("<div><h1>JQuery Core</h1></div>");
+
+-------------------------------------------------------------------------------------------------
