@@ -24,6 +24,8 @@ $(document).ready(function() {
 
     $("#speed").bind("click", function(){
         console.log("clicked turbo");
+        var val = $("#type").val();
+        $("#animationBox").val(ANIMATIONS[val]);
         clearInterval(play);
         runAnimation();
     });
