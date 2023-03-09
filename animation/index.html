@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="resources/animations.js"></script>
+    <script src="resources/index.js"></script>
+    <title>ASCII Animation</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>CSE 190 M ASCII Animation Viewer</h1>
+        <textarea name="animationBox" id="animationBox" cols="80" rows="20"></textarea>
+        <div id="controls">
+            <div id="play">
+                <label class="topLabel">Play Controls:</label>
+                <button id="start">Start</button>
+                <button id="stop" disabled>Stop</button>
+            </div>
+            <div id="animation">
+                <label class="topLabel">Animation:</label>
+                <select name="type" id="type">
+                    <option value="Blank">Blank</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Juggler">Juggler</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Dive">Dive</option>
+                    <option value="Custom">Custom</option>
+                </select>
+            </div>
+            <div id="size-container">
+                <label class="topLabel">Size</label>
+                <select name="size" id="size">
+                    <option value="7pt">Tiny</option>
+                    <option value="10pt">Small</option>
+                    <option value="12pt">Medium</option>
+                    <option value="16pt">Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+                </select>
+            </div>
+            <div id="speed-container">
+                <label class="topLabel">Speed</label>
+                <input type="checkbox" id = "speed">
+                <label for="checkbox">Turbo</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
