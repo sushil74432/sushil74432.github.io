@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+
 #wrapper{
     background-color: #ccccff;
     width: 90%;
@@ -5,9 +10,10 @@
     font-size: 14pt;
     padding: 5px;
     position: relative;
-    display: grid;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 h1{
@@ -27,6 +33,7 @@ h1{
 }
 
 #controls{
+    position: relative;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -50,4 +57,13 @@ label.topLabel{
     position: absolute;
     bottom: 35px;
     padding: 5px;
+}
+
+#badges{
+    position: relative;
+    float: right;
+}
+
+.logo{
+    height: 31px;
 }
