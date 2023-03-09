@@ -59,6 +59,7 @@ function stopAnimation(){
     $('#size').prop('disabled', false);
     $('#start').prop('disabled', false);
     $('#stop').prop('disabled', true);
+    $('#animationBox').prop('readonly', true);
     clearInterval(play);
     $("#animationBox").val(curText);
 }
