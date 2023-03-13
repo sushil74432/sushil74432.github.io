@@ -7,6 +7,7 @@ var contact = 0;
 var started = 0;
 
 function bindActions(){
+    // $("#status").text("");
     $(".boundary").hover(hoverOnBackground);
     // $("#start").click(startMaze);
     $("#end").hover(endMaze);
@@ -39,9 +40,7 @@ function removeBackground(){
 }
 
 function endMaze(){
-    console.log("Inside end maze");
     if(started === 1 && contact === 0){
-        // console.log(this);
         // alert("You win!!! :]");
         $("#status").text("You win!!! :]");
         $("#maze").unbind("mouseleave");
