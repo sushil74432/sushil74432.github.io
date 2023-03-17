@@ -1,0 +1,42 @@
+body{
+    background: hsla(240, 86%, 25%, 1);
+    background: linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#090979", endColorstr="#00D4FF", GradientType=1 );
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#wrapper{
+    color: #fbfbfb;
+    width: 60%;
+    min-height: 540px;;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: skyblue;
+    box-shadow: black 8px 8px 9px;
+
+}
+
+#wrapper h1{
+    text-align: center;
+    color: #fbfbfb;
+}
+
+#imgContainer{
+    display: block;
+    position: relative;
+    margin-top: 15px;    
+}
+
+#title{
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 45%);
+    width: -webkit-fill-available;
+    font-weight: bold;
+}
+
+#pic{
+    width:100%;
+}
