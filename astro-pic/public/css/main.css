@@ -1,9 +1,9 @@
 body{
-    background: hsla(240, 86%, 25%, 1);
+    /* background: hsla(240, 86%, 25%, 1); */
     background: linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#090979", endColorstr="#00D4FF", GradientType=1 );
+    /* background: -moz-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(240, 86%, 25%, 1) 0%, hsla(190, 100%, 50%, 1) 100%); */
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#090979", endColorstr="#00D4FF", GradientType=1 ); */
     font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
