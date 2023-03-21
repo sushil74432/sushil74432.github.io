@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+#body{
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#wrapper{
+    width:80%;
+    margin: 20px auto;
+    border: 5px solid #FBC02D;
+    /* padding: 2%; */
+    position: relative;
+    min-height: 550px;
+    background-color: #444444;
+}
+
+#searchBox{
+    text-align: center;
+}
+
+#searchTxt{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#searchBtn{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    /* padding: 10px 20px; */
+    padding: 12px 20px 10px 20px;
+    cursor: pointer;
+}
+
+#title{
+    font-family: "arvo";
+    margin: 0 0 2% 0;
+    padding: 1%;
+    background-color: #fbc02d;
+    text-align: center;
+    border-bottom: 5px;
+}
+
+#definations {
+    width: 70%;
+    margin: 5px auto;
+}
+
+#definations li{
+    margin: 10px;
+    list-style-type: none;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Arvo';
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: slategray;
+    color: floralwhite;
+    border-left: #fbc02d solid 10px;
+}
+
+#definations li span{
+    color: #fbc02d;
+    font-style: italic;
+}
