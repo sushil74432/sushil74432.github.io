@@ -2,7 +2,7 @@ const db = require("../db/dbConn");
 
 const def = (req, res)=>{
     console.log("Empty response");
-    res.json("{}");
+    res.json([{}]);
 }
 const getDefinition = (req, res, next) => {
     const word = req.params.word;

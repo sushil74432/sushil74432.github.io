@@ -5,6 +5,7 @@ function calcTip(){
         alert("Please completely fill the form!");
         return;
     }
-    var tipAmt = parseInt(total)+ (tip/total)*100
+    var tipAmt = parseInt(total)+ (tip/100)*total
+    console.log(tipAmt);
     document.getElementById("total").textContent = "$"+tipAmt;
 }

@@ -3,6 +3,10 @@ $(document).ready(()=>{
    
     $("#searchBtn").click(()=>{
         let word = $("#searchTxt").val();
+        if(word == ""){
+            alert("Word cannot be empty!");
+            return;
+        }
         $.ajax({
             url: server+"define/"+word,
             type: "GET",
@@ -14,9 +18,9 @@ $(document).ready(()=>{
 })
 
 const showDefinition = (data)=> {
-    console.log(data);
+    // console.log(data[0].definition);
     let node = "";
-    if(data !== null){
+    if(data !== null && data[0].definition !== undefined){
         data.forEach(def => {
             node += "<li> <span class = \"type\">("+def.wordtype+")</span> "+ def.definition+"</li>";
         });

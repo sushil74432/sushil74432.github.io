@@ -8,6 +8,7 @@ app.use(express.static('public'));
 
 app.get('/', mainController.def);
 app.post('/', mainController.def);
+app.get("/define", mainController.def);
 app.post("/define/:word", mainController.def);
 
 app.get("/define/:word", mainController.getDefinition);
